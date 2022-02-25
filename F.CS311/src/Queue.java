@@ -38,7 +38,7 @@ public class Queue {
   int deQueue() {
     int element;
     if (isEmpty()) {
-      System.out.println("Queue хоосон байна!");
+      System.out.println("Queue хоосон байна !");
       return (-1);
     } else {
       element = items[front];
