@@ -25,20 +25,20 @@ public class Queue {
 
   void enQueue(int element) {
     if (isFull()) {
-      System.out.println("Queue is full");
+      System.out.println("Queue дүүрсэн байна");
     } else {
       if (front == -1)
         front = 0;
       rear++;
       items[rear] = element;
-      System.out.println("Inserted " + element);
+      System.out.println("Оруулсан: " + element);
     }
   }
 
   int deQueue() {
     int element;
     if (isEmpty()) {
-      System.out.println("Queue is empty");
+      System.out.println("Queue хоосон байна");
       return (-1);
     } else {
       element = items[front];
@@ -49,7 +49,7 @@ public class Queue {
       else {
         front++;
       }
-      System.out.println("Deleted -> " + element);
+      System.out.println("Queue гээс амжилттай гаргалаа. Гарсан элемент =  " + element);
       return (element);
     }
   }
@@ -62,7 +62,7 @@ public class Queue {
 	    } else {
 	      element = items[front];
 	      }
-	      System.out.println("Peek -> " + element);
+	      System.out.println("Queue-гийн хамгийн урд талын элемент = " + element);
 	      return (element);
 	    }
   void display() {
@@ -85,6 +85,7 @@ public class Queue {
     Queue q = new Queue();
     
     boolean swtch = true;
+ try { 
     while(swtch) {
 
     System.out.println("Uildlee songono uu:\n" +
@@ -101,10 +102,10 @@ public class Queue {
 		q.enQueue(scanner.nextInt()); 
 		break;
 	case 2:
-		System.out.println("Queue гээс амжилттай гаргалаа. Гарсан элемент = " + q.deQueue()); 
+		q.deQueue(); 
 		break;
 	case 3:
-		System.out.println("Queue-гийн хамгийн урд талын элемент = " + q.peek());
+		q.peek();
 		break;
 	case 4:
 		System.out.println("Queue-гийн бүх элементийг харах: ");
@@ -122,5 +123,8 @@ public class Queue {
 		break;
     }
     }
+ } catch (Exception e) {
+	 System.out.println("Алдаа гарлаа!");
+ }
   }
 }
