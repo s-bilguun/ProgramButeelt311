@@ -11,7 +11,7 @@ public class Main {
 	 try { 
 	    while(swtch) {
 
-	    System.out.println("Uildlee songono uu:\n" +
+	    System.out.println("Үйлдлээ сонгоно уу:\n" +
 	    		"1. Enqueue\n"
 				+ "2. Dequeue\n"
 				+ "3. Peek\n"

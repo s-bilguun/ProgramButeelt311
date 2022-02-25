@@ -70,12 +70,12 @@ public class Queue {
     if (isEmpty()) {
       System.out.println("Empty Queue");
     } else {
-      System.out.println("\nУрд талын index-> " + front);
+      //System.out.println("\nУрд талын index-> " + front);
       System.out.println("Элементүүд -> ");
       for (i = front; i <= rear; i++)
         System.out.print(items[i] + "  ");
 
-      System.out.println("\nХойд талын index-> " + rear);
+      //System.out.println("\nХойд талын index-> " + rear);
     }
   }
 
