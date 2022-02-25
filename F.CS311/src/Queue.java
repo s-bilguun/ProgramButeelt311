@@ -1,6 +1,8 @@
-import java.util.Scanner;
+
 public class Queue {
-  int SIZE = 6;
+  public int SIZE = 5;
+  
+
   int items[] = new int[SIZE];
   int front, rear;
 
@@ -8,6 +10,7 @@ public class Queue {
     front = -1;
     rear = -1;
   }
+  
 
   boolean isFull() {
     if (front == 0 && rear == SIZE - 1) {
@@ -71,13 +74,14 @@ public class Queue {
       System.out.println("Queue хоосон байна");
     } else {
       //System.out.println("\nУрд талын index-> " + front);
-      System.out.println("Элементүүд -> ");
+      System.out.println("Элементүүд : ");
       for (i = front; i <= rear; i++)
         System.out.print(items[i] + "  ");
 
       //System.out.println("\nХойд талын index-> " + rear);
     }
   }
+
 
  
 }

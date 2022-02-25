@@ -5,6 +5,7 @@ public class Main {
 	 public static void main(String[] args) {
 		  
 		 Scanner scanner = new Scanner(System.in);
+		 Scanner sc = new Scanner(System.in);
 	    Queue q = new Queue();
 	    
 	    boolean swtch = true;
@@ -12,7 +13,8 @@ public class Main {
 	    while(swtch) {
 
 	    System.out.println("\nҮйлдлээ сонгоно уу:\n" +
-	    		"1. Enqueue\n"
+	             "0. Set Size\n"
+	    		+"1. Enqueue\n"
 				+ "2. Dequeue\n"
 				+ "3. Peek\n"
 				+ "4. Display\n"
@@ -20,6 +22,10 @@ public class Main {
 				+ "6. isFull\n"
 				+ "7. Program shutdown"); 
 	    switch(scanner.nextInt()) {
+	    
+	    case 0: System.out.println("Queue-гийн хэмжээгээ тохируулна уу");
+	    	q.SIZE = scanner.nextInt();
+	    	break;
 	    case 1:
 	    	System.out.println("Queue-д нэмэх элементээ оруулна уу: ");
 			q.enQueue(scanner.nextInt()); 
@@ -43,6 +49,7 @@ public class Main {
 			break;
 		case 7:
 			swtch = false;
+			System.out.println("Програм хаагдлаа!");
 			break;
 	    }
 	    }
