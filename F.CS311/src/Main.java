@@ -4,21 +4,21 @@ public class Main {
 
 	 public static void main(String[] args) {
 		  
-		  Scanner scanner = new Scanner(System.in);
+		 Scanner scanner = new Scanner(System.in);
 	    Queue q = new Queue();
 	    
 	    boolean swtch = true;
 	 try { 
 	    while(swtch) {
 
-	    System.out.println("Үйлдлээ сонгоно уу:\n" +
+	    System.out.println("\nҮйлдлээ сонгоно уу:\n" +
 	    		"1. Enqueue\n"
 				+ "2. Dequeue\n"
 				+ "3. Peek\n"
 				+ "4. Display\n"
 				+ "5. isEmpty\n"
 				+ "6. isFull\n"
-				+ "7. Program shutdown");
+				+ "7. Program shutdown"); 
 	    switch(scanner.nextInt()) {
 	    case 1:
 	    	System.out.println("Queue-д нэмэх элементээ оруулна уу: ");

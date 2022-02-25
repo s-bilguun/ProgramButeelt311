@@ -68,7 +68,7 @@ public class Queue {
   void display() {
     int i;
     if (isEmpty()) {
-      System.out.println("Empty Queue");
+      System.out.println("Queue хоосон байна");
     } else {
       //System.out.println("\nУрд талын index-> " + front);
       System.out.println("Элементүүд -> ");
