@@ -1,7 +1,7 @@
 
 public class Queue {
   public int SIZE = 5;
-  
+  //lab 2, zuwhun int bish ehleed ymar utga avahaa todorhoildog bolno (Generics) ashiglana
 
   int items[] = new int[SIZE];
   int front, rear;

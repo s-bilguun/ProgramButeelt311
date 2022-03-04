@@ -54,7 +54,7 @@ public class Main {
 	    }
 	    }
 	 } catch (Exception e) {
-		 System.out.println("Алдаа гарлаа!");
+		 System.out.println("Алдаа гарлаа!!");
 	 }
 	  }
 }
