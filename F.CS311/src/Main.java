@@ -9,7 +9,7 @@ public class Main {
 	    Queue q = new Queue();
 	    
 	    boolean swtch = true;
-	 try { 
+	 
 	    while(swtch) {
 
 	    System.out.println("\nҮйлдлээ сонгоно уу:\n" +
@@ -28,7 +28,7 @@ public class Main {
 	    	break;
 	    case 1:
 	    	System.out.println("Queue-д нэмэх элементээ оруулна уу: ");
-			q.enQueue(scanner.nextInt()); 
+			q.enQueue(scanner.next()); 
 			break;
 		case 2:
 			q.deQueue(); 
@@ -53,8 +53,6 @@ public class Main {
 			break;
 	    }
 	    }
-	 } catch (Exception e) {
-		 System.out.println("Алдаа гарлаа!!");
-	 }
+	 
 	  }
 }

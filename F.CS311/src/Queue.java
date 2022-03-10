@@ -1,9 +1,13 @@
 
-public class Queue {
-  public int SIZE = 5;
-  //lab 2, zuwhun int bish ehleed ymar utga avahaa todorhoildog bolno (Generics) ashiglana
+public class Queue<G> {
+  public int SIZE = 100;
+  @SuppressWarnings("unchecked")
+//lab 2, zuwhun int bish ehleed ymar utga avahaa todorhoildog bolno (Generics) ashiglana
 
-  int items[] = new int[SIZE];
+  //G[] items = new G[SIZE];
+ 
+  G[] items =  (G[]) new Object[SIZE];
+  
   int front, rear;
 
   Queue() {
@@ -26,7 +30,7 @@ public class Queue {
       return false;
   }
 
-  void enQueue(int element) {
+  void enQueue(G element) {
     if (isFull()) {
       System.out.println("Queue дүүрсэн байна!");
     } else {
@@ -38,11 +42,11 @@ public class Queue {
     }
   }
 
-  int deQueue() {
-    int element;
+  G deQueue() {
+    G element;
     if (isEmpty()) {
       System.out.println("Queue хоосон байна !");
-      return (-1);
+
     } else {
       element = items[front];
       if (front >= rear) {
@@ -55,19 +59,22 @@ public class Queue {
       System.out.println("Queue гээс амжилттай гаргалаа. Гарсан элемент =  " + element);
       return (element);
     }
+	return null;
+	
   }
   
-  int peek() {
-	  int element;
+  G peek() {
+	  G element;
 	    if (isEmpty()) {
-	      System.out.println("Queue is empty test");
-	      return (-1);
+	      System.out.println("Queue is empty");
+	      return null;
 	    } else {
 	      element = items[front];
 	      }
 	      System.out.println("Queue-гийн хамгийн урд талын элемент = " + element);
-	      return (element);
+	      return element;
 	    }
+
   void display() {
     int i;
     if (isEmpty()) {
