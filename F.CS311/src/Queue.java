@@ -56,7 +56,7 @@ public class Queue<G> {
       else {
         front++;
       }
-      System.out.println("Queue гээс амжилттай гаргалаа. Гарсан элемент =  " + element);
+      System.out.println("Queue гээс амжилттай гаргалаа.  Гарсан элемент =  " + element);
       return (element);
     }
 	return null;

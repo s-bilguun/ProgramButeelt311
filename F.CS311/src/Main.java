@@ -49,7 +49,7 @@ public class Main {
 			break;
 		case 7:
 			swtch = false;
-			System.out.println("Програм хаагдлаа!");
+			System.out.println("Програм хаагдлаа !");
 			break;
 	    }
 	    }
