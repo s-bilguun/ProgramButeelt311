@@ -60,7 +60,7 @@ public class Queue {
   int peek() {
 	  int element;
 	    if (isEmpty()) {
-	      System.out.println("Queue is empty");
+	      System.out.println("Queue is empty test");
 	      return (-1);
 	    } else {
 	      element = items[front];
