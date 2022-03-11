@@ -11,16 +11,12 @@ public class Main {
 	    boolean swtch = true;
 	 
 	    while(swtch) {
-
-	    System.out.println("\nҮйлдлээ сонгоно уу:\n" +
-	             "0. Set Size\n"
-	    		+"1. Enqueue\n"
-				+ "2. Dequeue\n"
-				+ "3. Peek\n"
-				+ "4. Display\n"
-				+ "5. isEmpty\n"
-				+ "6. isFull\n"
-				+ "7. Program shutdown"); 
+	    	
+	    	System.out.println("\nҮйлдлээ сонгоно уу: \n"
+	    	+ "0. Queue-ийн хэмжээгээ сонгох      1. Enqueue\n" 
+	    	+ "2. Dequeue                         3. Peek\n"
+	    	+ "4. Display                         5. IsEmpty\n"
+	    	+ "6. IsFull                          7. Shutdown program"); 
 	    switch(scanner.nextInt()) {
 	    
 	    case 0: System.out.println("Queue-гийн хэмжээгээ тохируулна уу");

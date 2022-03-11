@@ -1,12 +1,9 @@
 
 public class Queue<G> {
   public int SIZE = 100;
-  @SuppressWarnings("unchecked")
-//lab 2, zuwhun int bish ehleed ymar utga avahaa todorhoildog bolno (Generics) ashiglana
-
-  //G[] items = new G[SIZE];
  
-  G[] items =  (G[]) new Object[SIZE];
+  @SuppressWarnings("unchecked")
+G[] items =  (G[]) new Object[SIZE];
   
   int front, rear;
 
@@ -66,7 +63,7 @@ public class Queue<G> {
   G peek() {
 	  G element;
 	    if (isEmpty()) {
-	      System.out.println("Queue is empty");
+	      System.out.println("Queue хоосон байна !");
 	      return null;
 	    } else {
 	      element = items[front];
